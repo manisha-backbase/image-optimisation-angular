@@ -1,22 +1,34 @@
-<div class="row margin-top-xs" *ngFor="let imgConfig of imgList; index as i">
-  <div class="bb-card col-lg-6">
-    <div class="bb-card__header">
-      <h1 class="bb-card__title">Image{{i+1}}</h1>
-    </div>
-    <div class="bb-card__body">
-      <img src="https://ik.imagekit.io/ith29bzjr/{{imgConfig.name}}" width="400" height="400" alt="Image"/>
-    </div>
-    <div class="bb-card__footer">
-        Image rendering is not optimised here
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+
+
+
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card margin-bottom-sm" *ngFor="let imgConfig of imgList; index as i">
+      <div class="card-body">
+        <img src="https://ik.imagekit.io/ith29bzjr/{{imgConfig.name}}" width="200" height="200" alt="Image"/>
+        <p class="card-text">Image rendering is optimised here
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt
-        in culpa qui officia deserunt mollit anim id est laborum consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.
+        commodo consequat.
+        </p>
+      </div>
     </div>
   </div>
 </div>
+
+
+<!-- <img ngSrc="https://images.pexels.com/photos/33130/typewriter-keys-mechanically-letters.jpg?auto=compress&cs=tinysrgb&h=350" width="500" height="500" alt="entertainment image"/> -->
+
+<!-- <img ngSrc="custom-img.webp" width="1000" height="1000" alt="entertainment image" sizes="20vw"/> -->
+
+<!-- <img priority ngSrc="custom-img.webp" width="50" height="50" alt="entertainment image"/>
+<img ngSrc="https://images.pexels.com/photos/33130/typewriter-keys-mechanically-letters.jpg?auto=compress&cs=tinysrgb&h=350" width="500" height="500" alt="entertainment image"/>
+<img ngSrc="https://images.unsplash.com/photo-1537433156662-a467cd381897?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0d6214ffc5971f865245933e9de13be6&auto=format&fit=crop&w=500&q=60" width="500" height="500" alt="entertainment image"/>
+<img ngSrc="https://images.unsplash.com/photo-1486495939893-f384c2860f55?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bf36a4694839666ab094bcdd0bb88651&auto=format&fit=crop&w=1350&q=80" width="500" height="500" alt="entertainment image"/>
+-->
+
+
+
 
