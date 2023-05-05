@@ -4,7 +4,7 @@
         <h1 class="bb-card__title">Image{{i+1}}</h1>
       </div>
       <div class="bb-card__body">
-        <img [ngSrc]="imgConfig.name" width="400" height="400" priority alt="Image"/>
+        <img [ngSrc]="imgConfig.name" width="400" height="400" alt="Image" [priority]="i==0"/>
       </div>
       <div class="bb-card__footer">
           Image rendering is optimised here
