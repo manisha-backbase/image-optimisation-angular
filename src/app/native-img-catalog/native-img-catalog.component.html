@@ -1,0 +1,14 @@
+<div class="row margin-top-xs" *ngFor="let imgName of imgList; index as i">
+  <div class="bb-card col-lg-6">
+    <div class="bb-card__header">
+      <h1 class="bb-card__title">Image{{i+1}}</h1>
+    </div>
+    <div class="bb-card__body">
+      <img src="https://ik.imagekit.io/ith29bzjr/{{imgName}}" width="400" height="400" alt="Image"/>
+    </div>
+    <div class="bb-card__footer">
+        Image rendering is not optimised here
+    </div>
+  </div>
+</div>
+
