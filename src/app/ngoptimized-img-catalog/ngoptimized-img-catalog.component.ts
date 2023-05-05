@@ -17,7 +17,7 @@ export class NgoptimizedImgCatalogComponent {
   { name: "insurance-img.webp", width: 400, height: 400, priority: true },
   { name: "home-img.webp", width: 400, height: 400, priority: true },
   { name: "rent-img.webp", width: 400, height: 400, priority: true },
-  { name: "manage-pockets-empty-state-img.webp.webp", width: 400, height: 400, priority: true }]
+  { name: "manage-pockets-empty-state-img.webp", width: 400, height: 400, priority: true }]
   catalogImageDir(imgName: string): string {
     return `./assets/content/${imgName}-img.webp`;
   }
