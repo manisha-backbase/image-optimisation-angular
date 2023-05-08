@@ -1,17 +1,53 @@
 
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card margin-bottom-sm" *ngFor="let imgConfig of imgList; index as i">
-          <div class="card-body">
-            <img [ngSrc]="imgConfig.name" width="600" height="500" alt="Image" [priority]="i==0">
-            <p class="card-text">Image rendering is optimised here
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.
-            </p>
+    <div class="row ">
+      <div class="col-2">
+        <div class="sidenav">
+          <a>sidenavbar</a>
+        </div>
+      </div>
+      <div class="col">
+        <h1>Welcome</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt
+          in culpa qui officia deserunt mollit anim id est laborum consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <hr />
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col" *ngFor="let imgConfig of imgList; index as i">
+            <div class="card" >
+              <div class="card-body">
+                <h5 class="card-title">Image{{i+1}}</h5>
+                <img [ngSrc]="imgConfig.name" width="1000" height="700" alt="Image" [priority]="i==0" sizes="(max-width: 765px) calc(100vw-186px), calc((100vw - 186px) / 2)">
+                <div class="card-text">Image rendering is optimised here
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <!-- <div class="card-groups">
+          <div class="card margin-bottom-sm" >
+            <div class="card-body">
+              <img [ngSrc]="imgConfig.name" width="1000" height="700" alt="Image" [priority]="i==0" sizes="calc(100vw-229px)">
+              <p class="card-text">Image rendering is optimised here
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div> -->
+    
       </div>
     </div>
 

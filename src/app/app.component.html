@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link active" routerLinkActive="active" routerLink="/ngoptimized-img-list">NgOptimized Image List</a>
         <a class="nav-link" routerLinkActive="active" routerLink="/ngoptimized-img-catalog">NgOptimized Image Catalog</a>
         <a class="nav-link"routerLinkActive="active" routerLink="/native-img-catalog">Native Image Catalog</a>
       </div>
@@ -10,24 +10,8 @@
   </div>
 </nav>
 
-<div class="container-fluid text-center margin-top-5">
-  <div class="row content">
-    <div class="col-sm-12 text-left">
-      <h1>Welcome</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt
-        in culpa qui officia deserunt mollit anim id est laborum consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-      <hr />
+<div class="container-fluid margin-top-5">
       <router-outlet></router-outlet>
-    </div>
-  </div>
 </div>
 
 
