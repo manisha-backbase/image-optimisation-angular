@@ -3,7 +3,7 @@
       <div class="col-sm-6">
         <div class="card margin-bottom-sm" *ngFor="let imgConfig of imgList; index as i">
           <div class="card-body">
-            <img [ngSrc]="imgConfig.name" width="500" height="500" alt="Image" [priority]="i==0">
+            <img [ngSrc]="imgConfig.name" width="600" height="500" alt="Image" [priority]="i==0">
             <p class="card-text">Image rendering is optimised here
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -28,4 +28,6 @@
 
 
 
-
+<!-- <ng-container *ngFor="let imgConfig of imgList; index as i">
+  <img [ngSrc]="imgConfig.name" width="600" height="500" alt="Image" [priority]="i==0" ngSrcset="200w, 400w, 600w, 800w, 1000w, 1200w, 1600w, 2000w, 3000w">
+</ng-container> -->
