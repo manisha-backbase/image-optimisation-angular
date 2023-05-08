@@ -1,40 +1,47 @@
-
-    <div class="row ">
-      <div class="col-2">
-        <div class="sidenav">
-          <a>sidenavbar</a>
-        </div>
-      </div>
-      <div class="col">
-        <h1>Welcome</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt
-          in culpa qui officia deserunt mollit anim id est laborum consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <hr />
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col" *ngFor="let imgConfig of imgList; index as i">
-            <div class="card" >
-              <div class="card-body">
-                <h5 class="card-title">Image{{i+1}}</h5>
-                <img [ngSrc]="imgConfig.name" width="1000" height="700" alt="Image" [priority]="i==0" sizes="(max-width: 765px) calc(100vw-186px), calc((100vw - 186px) / 2)">
-                <div class="card-text">Image rendering is optimised here
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-                </div>
-              </div>
+<div class="row">
+  <div class="col-2">
+    <div class="sidenav">
+      <a>sidenavbar</a>
+    </div>
+  </div>
+  <div class="col">
+    <h1>Welcome</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in
+      culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <hr />
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col" *ngFor="let imgConfig of imgList; index as i">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Image{{ i + 1 }}</h5>
+            <img
+              [ngSrc]="imgConfig.name"
+              width="1000"
+              height="700"
+              alt="Image"
+              [priority]="i == 0"
+              sizes="(max-width: 765px) calc(100vw-186px), calc((100vw - 186px) / 2)"
+            />
+            <div class="card-text">
+              Image rendering is optimised here Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
             </div>
           </div>
         </div>
-        <!-- <div class="card-groups">
+      </div>
+    </div>
+    <!-- <div class="card-groups">
           <div class="card margin-bottom-sm" >
             <div class="card-body">
               <img [ngSrc]="imgConfig.name" width="1000" height="700" alt="Image" [priority]="i==0" sizes="calc(100vw-229px)">
@@ -47,22 +54,18 @@
             </div>
           </div>
         </div> -->
-    
-      </div>
-    </div>
+  </div>
+</div>
 
+<!-- <img ngSrc="https://images.pexels.com/photos/33130/typewriter-keys-mechanically-letters.jpg?auto=compress&cs=tinysrgb&h=350" width="500" height="500" alt="entertainment image"/> -->
 
-  <!-- <img ngSrc="https://images.pexels.com/photos/33130/typewriter-keys-mechanically-letters.jpg?auto=compress&cs=tinysrgb&h=350" width="500" height="500" alt="entertainment image"/> -->
-
-  <!-- <img ngSrc="custom-img.webp" width="1000" height="1000" alt="entertainment image" sizes="20vw"/> -->
+<!-- <img ngSrc="custom-img.webp" width="1000" height="1000" alt="entertainment image" sizes="20vw"/> -->
 
 <!-- <img priority ngSrc="custom-img.webp" width="50" height="50" alt="entertainment image"/>
 <img ngSrc="https://images.pexels.com/photos/33130/typewriter-keys-mechanically-letters.jpg?auto=compress&cs=tinysrgb&h=350" width="500" height="500" alt="entertainment image"/>
 <img ngSrc="https://images.unsplash.com/photo-1537433156662-a467cd381897?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0d6214ffc5971f865245933e9de13be6&auto=format&fit=crop&w=500&q=60" width="500" height="500" alt="entertainment image"/>
 <img ngSrc="https://images.unsplash.com/photo-1486495939893-f384c2860f55?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bf36a4694839666ab094bcdd0bb88651&auto=format&fit=crop&w=1350&q=80" width="500" height="500" alt="entertainment image"/>
  -->
-
-
 
 <!-- <ng-container *ngFor="let imgConfig of imgList; index as i">
   <img [ngSrc]="imgConfig.name" width="600" height="500" alt="Image" [priority]="i==0" ngSrcset="200w, 400w, 600w, 800w, 1000w, 1200w, 1600w, 2000w, 3000w">
